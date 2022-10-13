@@ -1,0 +1,176 @@
+#include<iostream>
+int x=0;
+using namespace std;
+class quiz
+{
+	public:
+	void header()
+{
+	cout<<"\t\t\t\t\t QUIZ GAME "<<endl;
+}
+void footer()
+{
+	cout<<"\t\t\t\t\t RESULTS "<<endl;
+}
+void user()
+{
+	char ch1[100];
+	cout<<"\t Enter Your Name : ";
+	cin>>ch1;
+	cout<<" \t Welcome "<<ch1<<endl;
+}
+void results()
+{
+	if(x==100)
+	cout<<" \t EXCELLENT";
+	if(x==90)
+	cout<<" \t VERY GOOD";
+	if(x==80)
+	cout<<" \t GOOD";
+	if(50==x||x==70||x==60)
+	cout<<" \t AVERAGE";
+	else if(x<=40)
+	cout<<" \t POOR";	
+	}
+};
+int main()
+{
+	char ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10,ch11,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21;
+	quiz obj1,obj2,obj3,obj4;
+	obj1.user();
+	obj2.header();
+	cout<<"\t Q1.The library function exit() causes an exit from? \n\t a.The program in which it occurs \n\t b.The function in which it occurs \n\t c.The block in which it occurs  "<<endl;
+	cin>>ch2;
+	if(ch2=='a')
+	{
+		x=x+10;
+		cout<<" \t Great! Your Game score is: \n"<<x<<endl;
+	}
+	else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	}
+	cout<<"\t Q2.The dot operator connects which of the following two entities? \n\t a.Class object and a class \n\t b.Class and member of that class\n\t c.Class object and member of that class"<<endl;
+	cin>>ch2;
+	if(ch2=='c')
+	{
+		x=x+10;
+		cout<<" \t Great! Your Game score is: \n"<<x;
+	}
+else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	}
+	cout<<"\t Q3.A static function ? \n\t a.should be called when an object is destroyed \n\t b.Can be called using the class name and function\n\t c.Is closely connected with an individual object of a class"<<endl;
+	cin>>ch2;
+	if(ch2=='b')
+	{
+		x=x+10;
+		cout<<" \t Great! Your Game score is: \n"<<x;
+	}
+	else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	}
+	cout<<"\t Q4. The function bad() is declared in the header file ? \n\t a.<iostream.h> \n\t b.<stdio.h>\n\t c.<math.h>"<<endl;
+	cin>>ch2;
+	if(ch2=='c')
+	{
+		x=x+10;
+		cout<<" \t Great! Your Game score is: \n"<<x;
+	}
+	else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	}
+	cout<<"\t Q5.In C++,a function contained within a class is called ? \n\t a.A method \n\t b.Member function\n\t c.A class function"<<endl;
+	cin>>ch2;
+	if(ch2=='b')
+	{
+		x=x+10;
+		cout<<" \t Great! Your Game score is: \n"<<x;
+	}
+else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	}
+	cout<<"\t Q6. Which of the following is called as ' THE LAND OF THUNDERBOLT'? \n\t a.Bhutan \n\t b.Canada \n\t c.Arab"<<endl;
+	cin>>ch2;
+	if(ch2=='a')
+	{
+		x=x+10;
+		cout<<" \t Grea! Your Game score is: "<<x;
+	}
+else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	cout<<" \t Press Enter! ";
+	}
+	system ("CLS");
+	obj2.header();
+
+	cout<<" \t Q7. Which of the following is called as ' THE WINDY CITY? \n\t a.Jerusalem \n\t b.Japan \n\t c.Chicago"<<endl;
+	cin>>ch2;
+	if(ch2=='c')
+	{
+		x=x+10;
+		cout<<" \t Grea! Your Game score is: "<<x;
+	}
+	else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	cout<<" \t Press Enter! ";
+	}
+	system ("CLS");
+	obj2.header();
+
+	cout<<"\t Q8. Which of the following is called as ' THE LAND OF WHITE ELEPHANTS'? \n\t a.Bangladesh \n\t b.Thailand \n\t c.India"<<endl;
+	cin>>ch2;
+	if(ch2=='b')
+	{
+		x=x+10;
+		cout<<" \t Grea! Your Game score is: "<<x;
+	}
+	else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	cout<<" \t Press Enter! ";
+	}
+	
+	system ("CLS");
+	obj2.header();
+
+	cout<<"\t Q9. Which of the following is called as ' THE CITY OF SEVEN HILLS'? \n\t a.Rome \n\t b.Nilgiri Hills \n\t c.Tibet "<<endl;
+	cin>>ch2;
+	if(ch2=='a')
+	{
+		x=x+10;
+		cout<<" \t Grea! Your Game score is: "<<x;
+	}
+	else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	cout<<" \t Press Enter! ";
+	}
+	
+	system ("CLS");
+	obj2.header();
+
+	cout<<"\t Q10. Which of the following is called as ' THE DARK CONTIENENT'? \n\t a.Asia \n\t b.Australia \n\t c.Africa"<<endl;
+	cin>>ch2;
+	if(ch2=='c')
+	{
+		x=x+10;
+		cout<<" \t Grea! Your Game score is: "<<x;
+	}
+	else
+	{
+	cout<<" \t Sorry wrong answer "<<endl;
+	cout<<" \t Press Enter! ";
+	}
+	
+	system ("CLS");
+	obj3.footer();
+	obj4.results();
+ 	return 0;
+}
